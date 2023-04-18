@@ -1,0 +1,108 @@
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: #27262b;
+}
+
+.Navigation {
+    position: relative;
+    z-index: 1;
+}
+
+.CarouselPop {
+    position: relative;
+    z-index: 10000;
+}
+
+.oriTitle {
+    border-bottom: 2px solid gray;
+}
+
+.title {
+    padding-left: 5px;
+    border-left: 4px solid rgb(220, 38, 38);
+}
+
+.card {
+    padding-top: 5px;
+    border-bottom: 2px solid gray;
+}
+
+
+
+.more {
+    position: relative;
+    left: 45%;
+    display: inline-block;
+    border-radius: 4px;
+    background-color: rgb(220, 38, 38);
+    border: none;
+    color: #FFFFFF;
+    text-align: center;
+    font-size: 17px;
+    padding: 10px;
+    width: 110px;
+    transition: all 0.5s;
+    cursor: pointer;
+    margin: 5px;
+}
+
+.more span {
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    transition: 0.5s;
+}
+
+.more span:after {
+    content: '»';
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    right: -15px;
+    transition: 0.5s;
+}
+
+.more:hover span {
+    padding-right: 15px;
+}
+
+.more:hover span:after {
+    opacity: 1;
+    right: 0;
+}
+
+.trending {
+    border: 1px solid transparent;
+}
+
+.tr-card {
+    box-sizing: border-box;
+    background: rgba(217, 217, 217, 0.58);
+    box-shadow: 12px 17px 51px rgba(0, 0, 0, 0.22);
+    backdrop-filter: blur(6px);
+    border-radius: 17px;
+    text-align: center;
+    cursor: pointer;
+    transition: transform 1s ease;
+    user-select: none;
+    font-weight: bolder;
+    font-size: 35px;
+    color: black;
+    transform-origin: center;
+    height: 100px;
+    line-height: 100px;
+}
+
+.tr-card:hover {
+    font-size: 50px;
+    transform: scale(1.08);
+    transition: transform 1s ease, font-size 0.5s ease;
+    transform-origin: center;
+    -webkit-transition: transform 1s ease, font-size 0.3s ease;
+    -moz-transition: transform 1s ease, font-size 0.5s ease;
+    -ms-transition: transform 1s ease, font-size 0.5s ease;
+    -o-transition: transform 1s ease, font-size 0.5s ease;
+}
